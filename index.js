@@ -54,25 +54,46 @@ const allDogs = [
 },
 ];
 
-let dogCalls = allDogs.find((element) => element.onclick("button"));
 
-const selectedDogs = (element)=> element.onclick("button"); 
-dogCalls = allDogs.find(selectedDogs);
-
-allDogs.forEach((element)=> 
-{
-    if(element.onclick("button"))
-        console.log(element);
-})
+let minAge = [];
+minAge= parseInt(minAge);
 
 
+const selectedDogs = [];
 
-
-
-
-
-//let str = 
-
-//let pet = document.querySelector(".str");
+allDogs.forEach(dog => 
+    {
+    if (dog.age > minAge) {
+        selectedDogs.push(dog);
+        
+    }
     
-  //     pet.innerHTML =str;
+});
+
+const showDogs = () => 
+    {
+    
+    let petNumber = document.querySelector("#petNum").value;
+   
+    petNumber = parseInt(petNumber) - 1;
+    
+    let selectedPetInfo = document.querySelector(".selectedPetInfo");
+    
+    let pet = allDogs[petNumber];
+    
+
+
+    
+
+let str = `${pet.dogName} the ${pet.breed} is ${pet.age} `;
+let dogs = document.querySelector(".str");
+
+dogs.innerHTML =str;
+
+str += pet.dogName + " the " + pet.breed + "is "+ pet.age;
+{
+console.log(str);
+
+}
+}
+
