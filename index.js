@@ -90,11 +90,8 @@ let dogs = document.querySelector(".str");
 
 dogs.innerHTML =str;
 
-
-
 console.log(str);
 
 
 }
-
 
