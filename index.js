@@ -85,12 +85,12 @@ const showDogs = () =>
 
     
 
-let str = `${pet.dogName} the ${pet.breed} is ${pet.age} `;
+let str = `${pet.dogName} the ${pet.breed} is ${pet.age} years old `;
 let dogs = document.querySelector(".str");
 
 dogs.innerHTML =str;
 
-str += pet.dogName + " the " + pet.breed + "is "+ pet.age;
+str += pet.dogName + " the " + pet.breed + "is "+ pet.age +"years old";
 {
 console.log(str);
 
