@@ -24,7 +24,7 @@ const allDogs = [
 {
     dogName:"Ashton",
     breed:"Terrier, American Pit Bull/Mix",
-    age:33/4
+    age:3
 },
 
 {
@@ -90,10 +90,11 @@ let dogs = document.querySelector(".str");
 
 dogs.innerHTML =str;
 
-str += pet.dogName + " the " + pet.breed + "is "+ pet.age +"years old";
+str += pet.dogName + " the " + pet.breed + "is "+ pet.age + " years old";
 {
 console.log(str);
 
 }
 }
+
 
